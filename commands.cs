@@ -37,7 +37,7 @@ namespace csharp_discord_bot {
                     : $"code output : ```\n{code_output}```"
                 };
 
-                client.SendMessage(message.Channel.Id, "", false, embed);
+                client.SendMessage(channel_id, "", false, embed);
             }
 
             dotnetfiddle code_executor = new dotnetfiddle();
